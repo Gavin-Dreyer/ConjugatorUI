@@ -1,0 +1,512 @@
+@keyframes pulse1 {
+    0%, 100% {
+    background-color: #F7E486;
+  }
+    50% {
+    background-color: lightgrey;
+  }
+}
+
+@keyframes pulse2 {
+    0%, 100% {
+    background-color: #0A4699;
+  }
+    50% {
+    background-color: lightgrey;
+  }
+}
+
+*{
+
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+
+    .mainBody {
+        background-image: url(../assets/yellowmap.png);
+        background-color: #0A4699;
+        background-repeat: no-repeat;
+        background-position: 167% 0%, 50% 85%;
+        background-size: auto, 100%;
+        min-height: 240vh;
+
+        header{
+            
+            #logoContainer{
+                display: flex;
+                font-size: 2rem;
+                height: 32vh;
+                width: 435px;
+                background-image: url(../assets/wave.svg), url(../assets/wave2.svg);
+                background-repeat: no-repeat;
+                background-size: auto, 400px 270px;
+                
+                
+
+                p {
+                    padding: 13% 0 0 4%;
+                    color: #0A4699;
+                }
+
+
+                img{
+                    margin: 0 0 0 0;
+                    padding: 0 0 160px 25px;
+                }
+            }
+
+        h1 {
+            color: #F7E486;
+            font-size: 3rem;
+            margin: 0 0 0 10%;
+            padding: 1%;
+        }
+
+        #btn1 {
+            .buttons(1.25rem, #F7E486, #0A4699, 15%, center, center, 1.5% 5%, 5px);
+            margin: 0 0 2% 55%;
+            box-shadow: 0 0 20px black; 
+
+            a {
+                text-decoration: none;
+                font-size: 1.25rem;
+                color: #0A4699;
+            } 
+        }
+
+        #btn1:hover {
+            animation: pulse1 3s ease infinite alternate;
+        }
+
+        #btn2 {
+            .buttons(1.25rem, #0A4699, #F7E486, 15%, center, center, 1.5% 5%, 5px);
+            border: 1px solid #F7E486;
+            margin: 0 0 0 55%;
+            box-shadow: 0 0 20px black;
+            
+
+            a {
+                text-decoration: none;
+                font-size: 1.25rem;
+                color: #F7E486;
+            }
+        }
+
+        #btn2:hover {
+            animation: pulse2 3s ease infinite alternate;
+        }
+
+    }
+
+        .about {
+            margin: 5% 0 0 0;
+            height: 130vh;
+            background-image: url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/topopache.svg), url(../assets/topopache.svg);
+            background-size: 50%, 80%, 75%, 75%, 75%, 75%, 75%, 75%, 60%, 60%;
+            background-position: 50% 19.5%, 50% 105%, 0 105%, 100% 105%, 100% 50%, 100% 25%, 0 25%, 0 50%, 0% 20%, 100% 20%;
+            background-repeat: no-repeat;
+
+            #aboutTop {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                width: 100%;
+                margin: 0 auto 0 auto;
+                padding: 5% 0 0 0;
+                
+
+                p {
+                    background-image: url(../assets/longbubble.svg);
+                    background-size: contain;
+                    background-position: 50% 50%;
+                    background-repeat: no-repeat;
+                    width: 80%;
+                    height: 15vh;
+                    margin: 10% auto 0 auto;
+                    padding: 10% 5% 5% 5%;
+                    font-size: 1.25rem;
+                    color: #0A4699;
+                    
+                }
+            }
+
+            #gator {
+                margin: 0 0% 0 80%;
+                
+            }
+
+            #aboutBottom {        
+                height: 40vh;
+                width: 90%;
+                display: flex;
+                justify-content: space-evenly;
+                margin: 5% auto 0 auto;
+                padding: 5% 0 0 0;
+                border-top: 2px solid #0A4699;
+                color: #073069;
+                
+            
+
+                .bottomInfo {
+                    width: 30%;
+                    
+
+                    h3 {
+                        font-size: 1.75rem;
+                        padding: 0 0 0 11%;
+
+                        img {
+                            margin: 0 0 0 1%;
+                        }
+                    
+                    }
+
+                    p {
+                        margin: 5% 0 0 0;
+                        padding: 0 0 0 11%;
+                        width: 85%;
+                        font-size: 1.25rem;
+                    }
+                }
+            }
+        }
+
+        #middleText {
+            margin: 5% auto 0 auto;
+            font-size: 1.5rem;
+            text-align: center;
+            color: #FFF2B3;
+            border-bottom: 2px solid #FFF2B3;
+            width: 22.5%;
+            padding: 0 0 2% 0;
+        
+        }
+        #bottomHalf {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            background-image: url(../assets/Rounded.svg);
+            background-size: cover;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            height: 60vh;
+            margin: 5% 0 0 0;
+
+            #userFeedBack {
+                display: flex;
+                justify-content: space-around;
+                height: 25vh;
+                margin: 7.5% auto 0 auto;
+                width: 90%;
+                color: #073069;
+                
+
+                .person {
+                    font-size: 1.25rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: space-evenly;
+                    margin: 0 0 0 5%;
+
+                    p {
+                        display: flex;
+                        justify-content: space-evenly;
+                        width: 85%;
+                        margin: 0 0 5% 0;
+
+                        img {
+                            border-radius: 50px;
+                            width: 25%;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+
+            #bottomBtn {
+                .buttons(1.25rem, #0A4699, #F7E486, 15%, center, center, 1.5% 5%, 5px);
+                margin: 0 auto 5% auto;
+                box-shadow: 0 0 20px black; 
+                
+            }
+
+            #bottomBtn:hover {
+                animation: pulse2 3s ease infinite alternate;
+            }
+        }
+
+        .contactInfo {
+            display: flex;
+            width: 90%;
+            height: 25vh;
+            margin: 12.5% auto 0 auto;
+            color: #FFF2B3;
+            font-size: 1.25rem;
+
+            #contact {
+                display: flex;
+
+                #contactP {
+                    padding: 2.5% 0 0 0;
+
+                    p {
+                        padding: 0 0 3% 0;
+                    }
+                }
+
+                nav {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0 0 0 10%;
+
+                    a {
+                        text-decoration: none;
+                        color: #FFF2B3;
+                        padding: 5%;
+                    }
+                }
+            }
+
+            #socials {
+                margin: 0 0 0 60%;
+
+                p {
+                    
+                    text-align: center;
+                    width: 100%;
+                }
+
+                img {
+                    height: auto;
+                    width: 100%;
+                }
+            }
+        }
+
+        footer { 
+            text-align: center;
+            color: #FFF2B3;
+            margin: 3.5% 0 0 0;
+        }
+    }
+}
+
+@media @phone {
+
+    * {
+    }
+
+    body {
+        max-width: 100%;
+        height: 360vh;
+    
+
+        .mainBody {
+            background-image: url(../assets/yellowmap.png);
+            background-color: #0A4699;
+            background-repeat: no-repeat;
+            background-position: 50% 10%;
+            background-size: contain;
+
+            header {
+
+                #logoContainer {
+                    height: 50vh;
+                    font-size: 1.5rem;
+                    width: 100%;
+
+                    img {
+                        height: 5vh;
+                        padding: 5% 0 0 0;
+                    }
+                }
+
+                h1 {
+                    margin: auto;
+                    text-align: center;
+                    font-size: 2.5rem;
+                }
+
+                #btn1 {
+                    .buttons(1.25rem, #F7E486, #0A4699, 40%, center, center, 1.5% 5%, 5px);
+                    margin: 5% 0 4% 25%;
+                }
+        
+                #btn2 {
+                    .buttons(1.25rem, #0A4699, #F7E486, 40%, center, center, 1.5% 5%, 5px);
+                    border: 1px solid #F7E486;
+                    margin: 0 0 0 25%;
+                }
+
+            }
+
+            .about {
+                margin: 10% 0 0 0;
+                height: 130vh;            
+                background-image: url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/topopache.svg), url(../assets/topopache.svg), url(../assets/hugeCenter.svg);
+                background-size: 100%, 100%, 100%, 100%, 100%, 100%, 100%, 60%, 60%, 100%;
+                background-position: 0 100%, 0 90%, 0 80%, 100% 25%, 100% 25%, 0 25%, 0 50%, 0% 24%, 100% 24%, 0 30%;
+                background-repeat: no-repeat;
+                max-width: 100%;
+                
+    
+                #aboutTop {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    max-width: 90%;
+                    padding: 070% 0 0 0;
+                    margin: 0% auto 0 auto;
+                    border-radius: 5px;
+                    background-image: url(../assets/textbubble.svg);
+                    background-size: 75%;
+                    background-position: 50% 90%;
+                    background-repeat: no-repeat;
+                    
+                
+                    
+    
+                    p {
+                        background-image: none;
+                        width: 65%;
+                        height: 2.5vh;
+                        margin: 0 auto 0 auto;
+                        padding: 0% 0 40% 0;
+                        font-size: .85rem;
+                        color: #0A4699;
+                        
+                        
+                    }
+                }
+    
+                #gator {
+                    margin: 0 0 0 60%;
+                    
+                }
+    
+                #aboutBottom {        
+                    height: 70vh;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    align-content: center;
+                    padding: 5% 0 5% 0;
+                    margin: 0 auto 0 auto;
+                    background-image: url(../assets/hugeCenter.svg);
+                    border-radius: 95px;
+                    
+                
+    
+                    .bottomInfo {
+                        width: 90%;
+                        
+    
+                        h3 {
+                            font-size: 1rem;
+                            padding: 0 0 0 11%;
+    
+                            img {
+                                margin: 0 0 0 1%;
+                            }
+                        
+                        }
+    
+                        p {
+                            margin: 5% 0 0 0;
+                            padding: 0 0 0 11%;
+                            width: 85%;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+
+            #middleText {
+                margin: 30% auto 10% auto;
+                font-size: 1.5rem;
+                text-align: center;
+                color: #FFF2B3;
+                border-bottom: 2px solid #FFF2B3;
+                width: 50%;
+                padding: 0 0 2% 0;
+            
+            }
+            #bottomHalf {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                background-image: url(../assets/Rounded.svg);
+                background-size: cover;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                height: 100vh;
+                margin: 0 0 0 0;
+    
+                #userFeedBack {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    height: 50vh;
+                    margin: 7.5% auto 0 auto;
+                    width: 90%;
+                    
+    
+                    .person {
+                        font-size: 1rem;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: space-evenly;
+                        margin: auto 0 auto 20%;
+    
+                        p {
+                            display: flex;
+                            justify-content: space-evenly;
+                            width: 85%;
+                            margin: 0 0 5% 0;
+    
+                            img {
+                                border-radius: 50px;
+                                width: 15%;
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+    
+                #bottomBtn {
+                    .buttons(1.25rem, #0A4699, #F7E486, 40%, center, center, 1.5% 5%, 5px);
+                    margin: 0 auto 5% auto;
+                }
+            }
+
+            .contactInfo {
+                display: flex;
+                flex-direction: column;
+                margin: 5% 0 20% 0;
+
+                #contact {
+                    
+                    nav {
+                        margin: 0;
+                    }
+                }
+
+                #socials{
+                    margin: 0 0 0 0;
+
+                    p {
+                        padding: 0 0 0 0;
+                    }
+
+                    img {
+                        height: auto;
+                        width: 50%;
+                        margin: 0 0 0 25%;
+                    }
+                }
+            }  
+        }
+    }    
+}

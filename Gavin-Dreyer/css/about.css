@@ -1,0 +1,466 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@keyframes pulse1 {
+  0%,
+  100% {
+    background-color: #F7E486;
+  }
+  50% {
+    background-color: lightgrey;
+  }
+}
+body {
+  font-family: 'Nunito', sans-serif;
+}
+body .mainBody {
+  background-image: url(../assets/yellowmap.png);
+  background-color: #0A4699;
+  background-repeat: no-repeat;
+  background-position: 167% 0%;
+  background-size: auto;
+  background-attachment: fixed;
+  min-height: 240vh;
+}
+body .mainBody header {
+  margin: 0 0 10% 0;
+}
+body .mainBody header #logoContainer {
+  display: flex;
+  font-size: 2rem;
+  height: 32vh;
+  width: 435px;
+  background-image: url(../assets/wave.svg), url(../assets/wave2.svg);
+  background-repeat: no-repeat;
+  background-size: auto, 400px 270px;
+}
+body .mainBody header #logoContainer p {
+  padding: 13% 0 0 4%;
+  color: #0A4699;
+}
+body .mainBody header #logoContainer img {
+  margin: 0 0 0 0;
+  padding: 0 0 160px 25px;
+}
+body .mainBody header h1 {
+  color: #F7E486;
+  font-size: 3rem;
+  margin: 0 auto 0 auto;
+  text-align: center;
+}
+body .mainBody #teamContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: white;
+}
+body .mainBody #teamContainer .team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  border: 2px solid #F7E486;
+  margin: 0 0 5% 0;
+  box-shadow: 0 0 20px black;
+  background: #0A4699;
+}
+body .mainBody #teamContainer .team .picture1 {
+  width: 100%;
+  height: 30vh;
+  background-image: url(../assets/Dave.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body .mainBody #teamContainer .team .picture2 {
+  width: 100%;
+  height: 30vh;
+  background-image: url(../assets/Dylan.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body .mainBody #teamContainer .team .picture3 {
+  width: 100%;
+  height: 30vh;
+  background-image: url(../assets/Joe.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body .mainBody #teamContainer .team .picture4 {
+  width: 100%;
+  height: 30vh;
+  background-image: url(../assets/lorenzo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body .mainBody #teamContainer .team .picture5 {
+  width: 100%;
+  height: 30vh;
+  background-image: url(../assets/Michael.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body .mainBody #teamContainer .team .picture6 {
+  width: 100%;
+  height: 30vh;
+  background-image: url(../assets/Noor.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body .mainBody #teamContainer .team .picture7 {
+  width: 100%;
+  height: 30vh;
+  background-image: url(../assets/Scott.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body .mainBody #teamContainer .team .picture8 {
+  width: 100%;
+  height: 30vh;
+  background-image: url(../assets/Zach.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body .mainBody #teamContainer .team .picture9 {
+  width: 100%;
+  height: 30vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body .mainBody #teamContainer .team .picture10 {
+  width: 100%;
+  height: 30vh;
+  background-image: url(../assets/Gavin.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body .mainBody #teamContainer .team p {
+  text-align: center;
+  color: #FFE981;
+  font-size: 1.5rem;
+  margin: 5% auto 0 auto;
+}
+body .mainBody #teamContainer .team .btn {
+  margin: 5% 0 5% 0;
+  display: flex;
+  font-size: 1.25rem;
+  background: #FFE981;
+  color: #0A4699;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  border-radius: 5px;
+  box-shadow: 0 0 20px black;
+}
+body .mainBody #teamContainer .team .btn:hover {
+  animation: pulse1 3s ease infinite alternate;
+}
+body .mainBody .contactInfo {
+  display: flex;
+  width: 90%;
+  height: 25vh;
+  margin: 12.5% auto 0 auto;
+  color: #FFF2B3;
+  font-size: 1.25rem;
+}
+body .mainBody .contactInfo #contact {
+  display: flex;
+}
+body .mainBody .contactInfo #contact #contactP {
+  padding: 2.5% 0 0 0;
+}
+body .mainBody .contactInfo #contact #contactP p {
+  padding: 0 0 3% 0;
+}
+body .mainBody .contactInfo #contact nav {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 10%;
+}
+body .mainBody .contactInfo #contact nav a {
+  text-decoration: none;
+  color: #FFF2B3;
+  padding: 5%;
+}
+body .mainBody .contactInfo #socials {
+  margin: 0 0 0 60%;
+}
+body .mainBody .contactInfo #socials p {
+  text-align: center;
+  width: 100%;
+}
+body .mainBody .contactInfo #socials img {
+  height: auto;
+  width: 100%;
+}
+body .mainBody footer {
+  text-align: center;
+  color: #FFF2B3;
+  margin: 3.5% 0 0 0;
+}
+@media (max-width: 500px) {
+  body {
+    max-width: 100%;
+  }
+  body .mainBody {
+    background-image: url(../assets/yellowmap.png);
+    background-color: #0A4699;
+    background-repeat: no-repeat;
+    background-position: 50% 32.5%;
+    background-size: contain;
+  }
+  body .mainBody header {
+    margin: 0 0 20% 0;
+  }
+  body .mainBody header #logoContainer {
+    height: 50vh;
+    width: 100%;
+  }
+  body .mainBody header #logoContainer img {
+    height: 5vh;
+    padding: 5% 0 0 0;
+  }
+  body .mainBody #teamContainer {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+  }
+  body .mainBody #teamContainer .team {
+    width: 100%;
+    display: flex;
+  }
+  body .mainBody #teamContainer .team .picture1 {
+    width: 100%;
+    height: 40vh;
+    background-image: url(../assets/Dave.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  body .mainBody #teamContainer .team .picture2 {
+    width: 100%;
+    height: 40vh;
+    background-image: url(../assets/Dylan.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  body .mainBody #teamContainer .team .picture3 {
+    width: 100%;
+    height: 40vh;
+    background-image: url(../assets/Joe.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  body .mainBody #teamContainer .team .picture4 {
+    width: 100%;
+    height: 40vh;
+    background-image: url(../assets/lorenzo.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  body .mainBody #teamContainer .team .picture5 {
+    width: 100%;
+    height: 40vh;
+    background-image: url(../assets/Michael.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  body .mainBody #teamContainer .team .picture6 {
+    width: 100%;
+    height: 40vh;
+    background-image: url(../assets/Noor.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  body .mainBody #teamContainer .team .picture7 {
+    width: 100%;
+    height: 40vh;
+    background-image: url(../assets/Scott.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  body .mainBody #teamContainer .team .picture8 {
+    width: 100%;
+    height: 40vh;
+    background-image: url(../assets/Zach.JPG);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  body .mainBody #teamContainer .team .picture9 {
+    width: 100%;
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  body .mainBody #teamContainer .team .picture10 {
+    width: 100%;
+    height: 40vh;
+    background-image: url(../assets/Gavin.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  body .mainBody .contactInfo {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 0 20% 0;
+  }
+  body .mainBody .contactInfo #socials {
+    margin: 0 0 0 0;
+  }
+  body .mainBody .contactInfo #socials p {
+    padding: 5% 0 0 0;
+  }
+  body .mainBody .contactInfo #socials img {
+    height: auto;
+    width: 50%;
+    margin: 0 0 0 25%;
+  }
+  body .mainBody footer {
+    margin: 10% 0 0 0;
+  }
+}
